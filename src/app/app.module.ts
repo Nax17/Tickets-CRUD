@@ -9,6 +9,7 @@ import { TrabajadorComponent } from './trabajador/trabajador.component';
 import { ExternoComponent } from './externo/externo.component';
 import { PiscinaComponent } from './piscina/piscina.component';
 import { HomeComponent } from './home/home.component';
+import { EstudianteService } from './estudiante/estudiante.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,10 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  /*Registro de dependencias: */
+  providers: [
+    EstudianteService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
